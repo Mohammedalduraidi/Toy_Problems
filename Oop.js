@@ -32,7 +32,7 @@
 function makeGame(upperbound){
 	var classes = {}
 	classes.upper = upperbound;
-	classes.rand = randInt;
+	classes.randInt = randInt;
 	classes.counter = 0
 	classes.randInt = randInt;
 	classes.guessMyNumber = guessMyNumber;
