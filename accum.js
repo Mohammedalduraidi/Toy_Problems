@@ -10,19 +10,20 @@ function each(array, func) {
     } 
 }
 
-//cwAT == c = 0, w = 1, A = 2 , T = 3
-    function accum(input){
-        var num = 0
-       var x = input.split("")
-       var counter = ""
-       each(x, function(elem, index){
-          if (index === num){
-            num++
-        counter = elem + elem 
-          }
-           console.log(i)
-       })
-       return counter
+function accum(input){
+    var str = ""
+   var x = input.split("")
+   each(x, function(element, I){
+       for(var i = 0; i <= I; i++){
+           if (i === 0){
+        str = str + element.toUpperCase() 
+           }
+           else{
+               str = str + element.toLowerCase()
+           }
        }
-       
     
+       str = str + "-"
+   })
+   return str.slice(0,str.length -1)
+}

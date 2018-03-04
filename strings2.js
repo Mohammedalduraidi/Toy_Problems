@@ -27,7 +27,5 @@
 // 	numberToString(999); // returns '999';`
 
 	function numberToString(num) {
-		var result = ''
-		result = result + num
-		return result
+	return num + ""
 	}

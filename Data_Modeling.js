@@ -23,7 +23,7 @@ var classMate=[mate1,mate2,mate3];
 	// 	-write a function called displayFriend that takes a mate as anargument and returns the important information in a readable way.
 
 	function displayFrind(mate){
-		return mate.name + " " + mate.age + " " + mate.hoby + " "+ mate.male
+		return mate.name + " " + mate.age + " " + mate.hoby + " "+ mate.gender
 	}
 	// 	-write a function called addFriend that takes a mate as an argument and add it to your classMates array.
 	function addFriend (classMate,mate){
@@ -43,3 +43,13 @@ var classMate=[mate1,mate2,mate3];
 	
 	// 	-Write a function searchMates that, given a query and an array of Mates,
 	//           searche the array of mates for "matching" mate. You will decide what way you want to write in your search algorithm.
+function searchMates(query,array){
+
+	for(var i = 0; i<array.length; i++){
+		if(query === array[i].name){
+			return array[i]
+		}
+	
+	}
+	return "this name not found"
+}

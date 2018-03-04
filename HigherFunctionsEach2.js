@@ -20,9 +20,12 @@ pName(x); = > ['Jon', 'Omar', 'salwa']
 	function pName(array) {
         var result = []
 	 each(array,function(x,i){
-       result.push(x.name)
+       if(i%2===0){
+           result.push(x)
+       }
      })
      return result;
+    }
 =======
 	function pName(argument) {
 		// your code is here
@@ -56,18 +59,14 @@ printValue(obj_1); =>
         }
     }
     
-<<<<<<< HEAD
+
 
     
 	function printValue(obj) {
-        var result = {}
-        each(obj,function(value,prop){
-          reuslt = result.value
+        var result = ""
+        each(obj,function(value,key){
+          result = result + value + "\n"
         })
         return result
-=======
-    
-	function printValue(obj) {
-		// your code is here
->>>>>>> cc67d8a9778e9402221541866539cacea4645ed9
-	}
+    }
+

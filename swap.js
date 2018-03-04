@@ -2,12 +2,15 @@
 	// IbrAHiM --> iBRahIm
 	// ToYPRoblEm --> tOyprOBLeM
 	function swap(input){
-
-		var x = input.split("")
-		var result = ""
-		for(var i = 0; i < x.length; i++){
-		result = result + x.slice(-1,x.length)	
-		
-	}
-	return result
+		var str = ""
+		for ( var i = 0; i < input.length; i++){
+			if (input[i] === input[i].toUpperCase()){
+				str = str + input[i].toLowerCase()
+			}
+			else {
+				str = str + input[i].toUpperCase()
+			}
+		}
+	return str 
+	
 }

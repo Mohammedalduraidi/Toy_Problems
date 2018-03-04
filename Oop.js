@@ -65,7 +65,7 @@ var giveUp = function(){
 var	numOfGuesses = function(){
 		return this.counter;
 	}
-=======
+
 function randInt(n) {
     return Math.floor(Math.random() * (n + 1));
 }
@@ -92,4 +92,4 @@ function makeGame(upperbound){
   	}
   }
 }
->>>>>>> 1885c6ead4e6d951fa8abc3767a9101c1fd46e72
+

@@ -8,9 +8,14 @@
 	function absAll(array) {
 		var res = [];
 		each(array, function(x){
-			if (x % 2 ===0){
+			if (x < 0){
+				x = x * -1
 				res.push(x)
-			}})
+			}
+			else{ 
+				res.push(x)
+			}
+		})
 	 return res;
 	}
 
@@ -29,10 +34,10 @@
     }
 	function multiplyOfFour(array) {
 	   var res= []
-	   each(array, function(x){
+	   each(array, function(x,i){
 	   	if(x%4===0 ){
 	   		res.push(x * 4);
 	   	}
-	   },i)
+	   })
 	   return res;
 	}

@@ -2,7 +2,13 @@
 // 	Input :: "a"
 // 	Ouput :: "Position of alphabet: 1"
 	function characPosit(character){
-		//your code is here
+		var array ="abcdefghigklmnopqrstuvwxyz"
+		
+		for(var i = 0; i< array.length; i++){
+			if(character === array[i]){
+				return i + 1
+			}
+		}
 	}
 
 // Write a function called repeatStr which repeats the given
@@ -10,5 +16,9 @@
 // repeatStr("hello",4) ==> 'hellohellohellohello'
 	
 	function repeatStr (n, s) {
-		//your code is here
+		var str = ""
+		for(var i = 0; i < s; i++){
+			str = str +  n
+		}
+		return str
 	}
